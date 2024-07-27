@@ -33,13 +33,13 @@ body {
 
 nav {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-between;
     width: 80vw;
+    align-items: center;
     margin: auto;
     position: relative;
     z-index: 1;
     padding-top: 1.2rem;
-    align-items: center;
 }
 
 .topbtn {
@@ -462,6 +462,14 @@ footer .lastbtn {
     margin-left: 145px;
     margin-bottom: 25px;
 }
+
+.trademark {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 145px;
+    font-size: 0.86rem;
+    margin-bottom: 70px;
+}
+
 
 /* CSS Code for MEDIA QUERIES  !!! */
 
