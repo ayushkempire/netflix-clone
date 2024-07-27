@@ -33,13 +33,13 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
     width: 80vw;
-    align-items: center;
     margin: auto;
     position: relative;
     z-index: 1;
     padding-top: 1.2rem;
+    align-items: center;
 }
 
 .topbtn {
@@ -120,31 +120,44 @@ nav {
     letter-spacing: 0.5px;
 }
 
-.redhover{
-	z-index: 1;
+.text :nth-child(4) {
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.redhover img:nth-child(1){
-	width: 434px;
-	height: 60px;
-	opacity: 0.7;
+#email {
+    padding: 15px 125px 15px 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(34, 33, 33, 0.786);
+    opacity: 0.7;
+    border: 1px solid rgba(123, 119, 119, 0.9);
+    border-radius: 0.25rem;
+    font-size: large;
+
 }
 
-.redhover img:nth-child(2){
-	width: 225px;
-	height: 60px;
+.text button {
+    padding: 15px 60px 15px 20px;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.35rem;
+    font-weight: 550;
+    background-image: url(images/icons8-right-arrow-50.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: 9rem;
+    background-position-y: 0.95rem;
+    cursor: pointer;
 }
 
-.redhover img:nth-child(1):hover{
-	cursor: text;
-}
-
-.redhover img:nth-child(2):hover{
-	cursor: pointer;
+.redhover :hover {
+    background-color: rgb(191, 8, 17);
+    transition: 0.3s;
 }
 
 /* CSS Code for MAIN  !!! */
@@ -450,7 +463,6 @@ footer .lastbtn {
     margin-bottom: 25px;
 }
 
-
 /* CSS Code for MEDIA QUERIES  !!! */
 
 
@@ -573,37 +585,3 @@ footer .lastbtn {
         width: 200px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
